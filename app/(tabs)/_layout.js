@@ -16,6 +16,7 @@ export default function Layout() {
         }}
       >
         <Stack.Screen name="settings" />
+        <Stack.Screen name="chatBot" />
       </Stack>
     </SafeAreaView>
   );

@@ -26,6 +26,7 @@ module.exports = {
           900: "#27184d",
         },
         accent: "#FFF2F2",
+        white: "rgb(251,251,251)",
       },
     },
   },

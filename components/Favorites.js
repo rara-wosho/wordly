@@ -21,7 +21,7 @@ const Favorites = ({ setSearchWord }) => {
   if (!favorites) return null;
 
   return (
-    <View>
+    <>
       <Text className="text-xl text-gray-600 font-bold mb-2">Favorites</Text>
 
       {favorites.length > 0 ? (
@@ -38,14 +38,16 @@ const Favorites = ({ setSearchWord }) => {
               <Text className="text-xl text-gray-600">{fav}</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => removeFavorite(fav)}>
-              <Feather name="trash" size={18} color="red" />
+              <Feather name="trash" size={18} color="#D2042D" />
             </TouchableOpacity>
           </View>
         ))
       ) : (
-        <Text className="text-lg text-gray-500 mb-2">No History</Text>
+        <Text className="text-lg text-gray-500 mb-2 py-4 text-center">
+          You don't have a favorite word. Try adding one.
+        </Text>
       )}
-    </View>
+    </>
   );
 };
 

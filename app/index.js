@@ -7,7 +7,7 @@ import "../global.css";
 
 import PrimaryBtn from "../components/PrimaryBtn";
 
-const index = () => {
+const app = () => {
   return (
     <>
       <SafeAreaView className="h-full">
@@ -31,4 +31,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default app;
